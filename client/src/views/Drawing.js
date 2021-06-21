@@ -147,7 +147,7 @@ const previewFile= (file) =>{
   {successSave && <Popup variant="info">{`Drawing Successfully ${id?"Updated":"Created"}`}</Popup> }
 
 <div className="drawing-header">
-  <button onClick={()=>openModal({})} className="btn upload" >Upload A Drawing </button>
+  <button onClick={()=>openModal({})} className="btns upload" >Upload A Drawing </button>
 </div>
 
 {modalVisible?
@@ -184,11 +184,11 @@ const previewFile= (file) =>{
         </div>
         <div> 
         <label/>
-        <button className=" btn"  type="submit">{id?"Update":"Save"}</button>
+        <button className=" btns"  type="submit">{id?"Update":"Save"}</button>
         </div>
         <div> 
         <label/>
-        <button className=" btn" onClick={()=>setModalVisible(false)} >Back</button>
+        <button className=" btns" onClick={()=>setModalVisible(false)} >Back</button>
         </div>
         
     </form>
@@ -200,11 +200,11 @@ const previewFile= (file) =>{
    <div  className="flex-start">
             
             <img src={drawing.image}  alt="I"/>
-            <h3>{drawing.name}</h3>
+            <h3 style={{color:"black"}}>{drawing.name}</h3>
             </div>
             <div >
-<button onClick={()=>openModal(drawing)}  className="btn edit-btn" type="submit">Edit</button>
-<button type="submit" onClick={()=>deleteHandler(drawing)} className="btn ">Delete</button>
+<button onClick={()=>openModal(drawing)}  className="btns edit-btns" type="submit">Edit</button>
+<button type="submit" onClick={()=>deleteHandler(drawing)} className="btns ">Delete</button>
 </div>
 </li>
  )}

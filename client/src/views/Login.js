@@ -62,7 +62,7 @@ const submitHandler=(event)=>{
         </div>
         <div> 
         <label/>
-        <button className=" btn"  type="submit">Login</button>
+        <button className=" btns"  type="submit">Login</button>
         </div>
         
     </form>

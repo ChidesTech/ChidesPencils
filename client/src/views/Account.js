@@ -60,7 +60,7 @@ const  Account = (props) =>{
     </div>
     <div> 
     
-    <button className=" btn"  type="submit">Update</button>
+    <button className=" btns"  type="submit">Update</button>
     </div>
     
 </form>

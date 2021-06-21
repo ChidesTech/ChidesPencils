@@ -10,19 +10,19 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(61, 57, 57);
     padding: 0;
+    color: black;
 }
 
 .grid-container{
     display: grid;
-    grid-template-areas:"section" "header" "main" "footer";
+    grid-template-areas: "header" "main" "footer";
     grid-template-columns: 1fr ;
-    grid-template-rows:4rem 6rem 1fr 5rem;
+    grid-template-rows:6rem 1fr 5rem;
     height:100%;
 }
 header{
     grid-area: header;
-    box-shadow:0 0.2rem 0.8rem rgba(0, 0, 0, 0.4) ;
-    background-color: black;
+   
    
 
 }
@@ -41,37 +41,44 @@ footer{
 }
 
 
-header a{
+/* header a{
    color: white;
 }
 /* header a:hover{
    color: navy;
 } */
 
-a{
+/* a{
     text-decoration: none;
     
+} */
+
+.link .active{
+    color: white;
 }
-a{
+/* a{
     text-decoration: none;
-}
+} 
 
 .brand{
     color: white;
     font-size: 3rem;
     font-weight: bold;
     margin-left: 1rem;
-}
+}*/
 .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
-}
+} 
 
 .row.center{
     justify-content: center;
+}
+.navbar-brand  {
+    color: white;
 }
 
 section {
@@ -86,7 +93,7 @@ section {
 
 }
 
-.btn{
+.btns{
     display: inline-block;
     text-decoration: none;
     font-weight: bolder;
@@ -101,7 +108,7 @@ section {
     
   }  
 
-  /* .btn{
+  /* .btns{
     display: inline-block;
     padding: 0.25rem 1rem;
     text-decoration: none;
@@ -186,6 +193,8 @@ section {
         font-size: 2rem;
         margin-bottom: 0;
         font-weight: bold;
+        color: black;
+
         
     }
     .drawing-name a{
@@ -194,6 +203,49 @@ section {
         
     }
     
+    .content{
+        padding: 1rem;
+      }
+      .details{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      
+      .image-details{
+        flex: 2 1 60rem;
+      }
+      .image-details img{
+        max-width: 60rem;
+        width: 100%;
+      }
+      
+      .info-details
+      {
+        flex: 1 1 60rem;
+        font-size: 1.5rem;
+      }
+      .info-details ul{
+       padding: 0;
+       list-style: none;
+      }
+      
+      .info-details p{
+        font-size: 2.2rem;
+        color: white;
+        margin: 0;
+      }
+
+      .p{
+          color: white;
+      }
+      
+      .info-details li,
+      .action-details li{
+       margin-bottom: 1rem;
+       list-style: none;
+      }
 
     .form{
         max-width: 40rem;
@@ -222,7 +274,7 @@ section {
      font-size: 2.5rem;
      color: white;
       }
-.form .btn{
+.form .btns{
     margin-bottom: 1rem;
 }
      
@@ -433,11 +485,12 @@ section {
             font-size: 2rem;
             margin-top: -2rem;
             font-weight: bold;
+            color: black;
             
         }
 
         .form{
-            max-width: 35rem;
+            max-width: 38rem;
             margin: 12rem auto;
             margin-bottom: 18rem;
            
@@ -455,12 +508,19 @@ section {
           }
 
           input{
-              width: 27rem;
+            align-items: center;
+             margin-bottom: 1px;
+             padding: 12px 15px;
+             font-size: 3rem;
+             border: none;
+             border: 1px solid rgb(61, 57, 57);
+             outline: none;
+             font-size: 18px;
+             background-color: rgb(236, 236, 236); 
+             box-shadow: inset 10px 10px 15px rgb(199, 196, 196), inset -10px -10px 15px rgb(255, 255, 255);
+             border-radius: 8px;
          }
 
-         .form .btn{
-             width: 30rem;
-         }
          
 
         .logout{
@@ -489,27 +549,21 @@ section {
           
         }
         
-      .uploaded .btn{
+      .uploaded .btns{
             font-size: 1.4rem;
         }
-      .uploaded .btn{
+      .uploaded .btns{
             font-size: 1.2rem;
             margin-right: -.2rem;
         }
 
         .whatsapp {
             position: fixed;
-            bottom: 3%;
+            bottom: 7%;
             left: 1rem;
              }
 
-             .grid-container{
-                display: grid;
-                grid-template-areas: "header" "section" "main" "footer";
-                grid-template-columns: 1fr ;
-                grid-template-rows: 6rem 6rem 1fr 5rem;
-                height:100%;
-            }
+            
             .chat{
                 position: fixed;
                 bottom: 12%;

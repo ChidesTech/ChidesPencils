@@ -7,6 +7,8 @@ import Drawing from "./views/Drawing";
 import { useSelector } from "react-redux";
 import NotFound from "./views/NotFound";
 import Account from "./views/Account";
+import About from "./views/About";
+
 
 function App(props) {
   const userLogin = useSelector(state=>state.userLogin);
@@ -20,6 +22,7 @@ function App(props) {
       {userInfo && <Route path="/drawings" exact={true} component={Drawing} />}
       {userInfo && <Route path="/account" exact={true} component={Account} />}
       <Route path="/login" exact={true} component={Login} />
+      <Route path="/about" exact={true} component={About} />
       <Route path="/gallery" exact={true} component={Home} />
       <Route path="/" exact={true} component={Landing} />
       <Route component={NotFound}/>
