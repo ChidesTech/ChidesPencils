@@ -77,7 +77,7 @@ useEffect(()=>{
        </main> 
 
       }
-         <footer className="row center">By ChidesTechnologies@2021</footer>
+          <footer className=" center">By ChidesTechnologies@2021</footer> 
       </div>
     </>)
 };

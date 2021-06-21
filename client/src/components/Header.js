@@ -25,7 +25,7 @@ const {userInfo} = userLogin;
 </section> */}
     
 <header 
-// className="row"
+ 
 >
 
 { userInfo ?  (<nav class="navbar navbar-inverse">

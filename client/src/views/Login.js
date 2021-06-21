@@ -68,6 +68,8 @@ const submitHandler=(event)=>{
     </form>
 
 </div>
+<footer className=" center">By ChidesTechnologies@2021</footer>
+
 </div>
 </>
   );
