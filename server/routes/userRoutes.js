@@ -21,7 +21,7 @@ userRoute.put('/:id',isAuth, async (req, res) => {
   }
 });
 
-userRoute.get('/createadmin', async (req, res) => {
+userRoute.get('/createadmin',isAuth, async (req, res) => {
   try {
     const user = new User({
       admin: 'Desmond',
@@ -33,7 +33,7 @@ userRoute.get('/createadmin', async (req, res) => {
     res.send({ msg: error.message });
   }
 });
-userRoute.get("/seed",async(req, res)=>{
+userRoute.get("/seed",isAuth,async(req, res)=>{
   await User.deleteMany({});
   const createdUsers = await User.insertMany([
     {admin: "Desmond",password: "des"},
