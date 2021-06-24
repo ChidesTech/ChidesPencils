@@ -33,7 +33,7 @@ const  Account = (props) =>{
 
   return  <div className="grid-container">
   <Header/>
-
+<main>
   <div>
 
 <form className="form"
@@ -66,7 +66,7 @@ const  Account = (props) =>{
 </form>
 
 </div>
-  
+</main>
 
 </div>
 

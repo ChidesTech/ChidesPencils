@@ -16,7 +16,7 @@ app.use(express.urlencoded({limit: "50mb", extended: true }));
 
 const MongoDBUri = "mongodb+srv://chidestech:iluvumum@chidespencils.glmmq.mongodb.net/chidespencils?retryWrites=true&w=majority"
 
-mongoose.connect( MongoDBUri || "mongodb://localhost/photoGallery"  , {
+mongoose.connect( MongoDBUri ||  "mongodb://localhost/photoGallery"  , {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

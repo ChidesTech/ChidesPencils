@@ -28,11 +28,14 @@ uploadRoute.post('/', upload.single('image'), (req, res) => {
 uploadRoute.post('/cloud', async(req, res) => {
   try {
     const fileStr = req.body.data;
-    const uploadedResponse = await cloudinary.uploader.
-    upload(fileStr, {
-      upload_preset : "chidespencils"
-    });
-    res.send(uploadedResponse.url)
+   
+      const uploadedResponse = await cloudinary.uploader.
+      upload(fileStr, {
+        upload_preset : "chidespencils"
+      });
+      res.send(uploadedResponse.url)
+    
+   
   } catch (error) {
     console.log(error);
     res.status(500).json({err: "Something went wrong"});

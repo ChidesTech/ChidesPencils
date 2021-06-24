@@ -6,7 +6,6 @@ import "../../src/index.css"
 import Loading from "../components/Loading";
 
 
-
 const Home =()=>{
    const drawingList = useSelector( state=> state.drawingList);
    const {loading, drawings, error} = drawingList;
@@ -46,6 +45,7 @@ useEffect(()=>{
       
       <div className="grid-container">
      <Header/>
+     {/* <Typing></Typing> */}
      {
       loading ? (
         <Loading/>
@@ -78,7 +78,9 @@ useEffect(()=>{
 
       }
           <footer className=" center">By ChidesTechnologies@2021</footer> 
+         
       </div>
+      
     </>)
 };
 

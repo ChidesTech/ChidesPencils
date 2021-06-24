@@ -154,7 +154,7 @@ const previewFile= (file) =>{
 
 
 <div>
-<form className="form"
+<form className="account-form  form"
      onSubmit={submitHandler}
      >
        {uploading}
@@ -168,7 +168,7 @@ const previewFile= (file) =>{
        
         </div>
   <div id="imageRequired"></div>
-       {uploading &&  <div  style={{color: "white"}} >Uploading....</div> }
+       {uploading &&  <div >Uploading....</div> }
         <div>
         
             <input type="text" value={name || ""} name="name" placeholder="Name"

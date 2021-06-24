@@ -36,7 +36,7 @@ function Landing() {
     </div>
     <div className="logo">
  <img src="images/DP.jpg" alt=""/>
- <h3>CHIDES PENCILS</h3>
+ <h3>ISIVEN PENCILS</h3>
 </div>
 </div>
     }
